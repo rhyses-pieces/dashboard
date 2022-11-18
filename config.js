@@ -11,16 +11,16 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: "John",
+  name: "Rhys",
   openInNewTab: true,
-  title: "Bento",
+  title: "Dashboard",
 
   // Clock
-  twelveHourFormat: false,
+  twelveHourFormat: true,
   flashSeparator: false,
   
   // Theme
-  theme: "bento",
+  theme: "catppuccin-mocha",
   imageBackground: false,
   imageUrl: "background.jpg", // place in ./src/assets/images/ and provide the file name. Alternatively, provide a URL to an image. If the page is served over https, you may have issues loading images from insecure origins.
   themes: [   // List of installed themes, add your own themes in ./src/assets/css/themes and include it in the array below.
@@ -38,7 +38,7 @@ const CONFIG = {
   ],
 
   // Search Bar
-  searchBar: true,
+  searchBar: false,
   searchEngine: "google", // google, ddg
   barStyle: "bento", // bento, minimal, boxy, rounded
   barPlaceholder: "", // if blank, use search engine name. Set to ' ' for no placeholder.
@@ -54,14 +54,14 @@ const CONFIG = {
   bentoLayout: "bento", // 'bento', 'lists', 'buttons'
 
   // Weather
-  weatherKey: "YourOpenWeatherMapAPIKey", // Write here your API Key
-  weatherIcons: "OneDark", // 'Onedark', 'Nord', 'Dark', 'White'
+  weatherKey: "1438cb19c727194424e1295815754ecd", // Write here your API Key
+  weatherIcons: "Nord", // 'Onedark', 'Nord', 'Dark', 'White'
   weatherUnit: "C", // 'F', 'C'
   language: "en", // More languages in https://openweathermap.org/current#multi
 
-  trackLocation: true, // Request location from the browser. If false, or location is denied, use the coordinates below.
-  defaultLatitude: "37.775",
-  defaultLongitude: "-122.419",
+  trackLocation: false, // Request location from the browser. If false, or location is denied, use the coordinates below.
+  defaultLatitude: "37.61",
+  defaultLongitude: "-77.44",
 
   // Autochange theme from OS preferece - The below options are all mutually exclusive. If you've got multiple set to true, the first one will be set and the rest ignored.
   changeThemeByOS: false,
@@ -90,31 +90,31 @@ const CONFIG = {
       id: "2",
       name: "Mail",
       icon: "envelope",
-      link: "https://mail.protonmail.com/"
+      link: "https://outlook.live.com/mail"
     },
     {
       id: "3",
-      name: "Todoist",
-      icon: "list-ol",
-      link: "https://todoist.com"
+      name: "Notion",
+      icon: "cube",
+      link: "https://www.notion.so"
     },
     {
       id: "4",
-      name: "Calendar",
-      icon: "calendar",
-      link: "https://calendar.google.com/calendar/r"
+      name: "Reddit",
+      icon: "fab-reddit",
+      link: "https://libreddit.spike.codes/"
     },
     {
       id: "5",
-      name: "Reddit",
-      icon: "fab-reddit",
-      link: "https://reddit.com"
+      name: "BitBurner",
+      icon: "terminal",
+      link: "https://danielyxie.github.io/bitburner/"
     },
     {
       id: "6",
-      name: "Odysee",
-      icon: "fab-youtube",
-      link: "https://odysee.com/"
+      name: "Penpot",
+      icon: "fab-figma",
+      link: "https://penpot.app/"
     }
   ],
 
@@ -129,7 +129,7 @@ const CONFIG = {
       id: "2",
       name: "twitter",
       icon: "fab-twitter",
-      link: "https://twitter.com/"
+      link: "https://nitter.net/"
     },
     {
       id: "3",
@@ -139,22 +139,22 @@ const CONFIG = {
     },
     {
       id: "4",
-      name: "Amazon",
-      icon: "fab-amazon",
-      link: "https://amazon.com/"
+      name: "MechGroupBuys",
+      icon: "keyboard",
+      link: "https://www.mechgroupbuys.com"
     },
     {
       id: "5",
-      name: "Hashnode",
-      icon: "fab-hashnode",
-      link: "https://hashnode.com/"
+      name: "Youtube",
+      icon: "fab-youtube",
+      link: "https://youtube.com/"
     },
     {
       id: "6",
-      name: "Figma",
-      icon: "fab-figma",
-      link: "https://figma.com/"
-    }
+      name: "Dropout TV",
+      icon: "face-laugh",
+      link: "https://www.dropout.tv/"
+    },
   ],
 
   // ┬  ┬┌─┐┌┬┐┌─┐
@@ -198,8 +198,8 @@ const CONFIG = {
           link: "https://www.dribbble.com"
         },
         {
-          name: "Trello",
-          link: "https://www.trello.com"
+          name: "Airtable",
+          link: "https://airtable.com"
         },
         {
           name: "Slack",
@@ -221,15 +221,15 @@ const CONFIG = {
         },
         {
           name: "Reddit",
-          link: "https://www.reddit.com"
+          link: "https://libreddit.spike.codes"
         },
         {
-          name: "Hashnode",
-          link: "https://www.hashnode.com"
+          name: "BitBurner",
+          link: "https://danielyxie.github.io/bitburner"
         },
         {
-          name: "Pocket",
-          link: "https://www.pocket.com"
+          name: "Itch.io",
+          link: "https://itch.io/"
         }
       ]
     },
@@ -238,20 +238,20 @@ const CONFIG = {
       id: "2",
       links: [
         {
-          name: "Front",
-          link: "https://www.reddit.com/r/Frontend/"
+          name: "Frameworks",
+          link: "https://www.framework.dev/"
+        },
+        {
+          name: "Neocities",
+          link: "https://neocities.org/"
         },
         {
           name: "Rust",
-          link: "https://www.reddit.com/r/rust/"
+          link: "https://arewegameyet.rs/"
         },
         {
-          name: "Go",
-          link: "https://www.reddit.com/r/golang/"
-        },
-        {
-          name: "Repos",
-          link: "https://github.com/migueravila"
+          name: "Roundup",
+          link: "https://www.obsidianroundup.org/"
         }
       ]
     }
@@ -261,8 +261,8 @@ const CONFIG = {
   // If themeButton is set to false, the theme can only be set in this file.
   // Disabling the weather component may cause issues with location-based light/dark switching.
   componentsEnabled: {
-    searchBar: true,
-    themeButton: true,
+    searchBar: false,
+    themeButton: false,
     clock: true,
     greeter: true,
     date: true,
