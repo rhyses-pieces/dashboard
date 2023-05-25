@@ -20,7 +20,7 @@ const CONFIG = {
   flashSeparator: false,
   
   // Theme
-  theme: "catppuccin-mocha",
+  theme: "onedark",
   imageBackground: false,
   imageUrl: "background.jpg", // place in ./src/assets/images/ and provide the file name. Alternatively, provide a URL to an image. If the page is served over https, you may have issues loading images from insecure origins.
   themes: [   // List of installed themes, add your own themes in ./src/assets/css/themes and include it in the array below.
@@ -32,6 +32,7 @@ const CONFIG = {
     "conceptdark", // dark mode only
     "monokai",
     "nord",
+    "onedark",
     "sakura",
     "solarized",
     "summer"
@@ -55,7 +56,7 @@ const CONFIG = {
 
   // Weather
   weatherKey: "1438cb19c727194424e1295815754ecd", // Write here your API Key
-  weatherIcons: "Nord", // 'Onedark', 'Nord', 'Dark', 'White'
+  weatherIcons: "Onedark", // 'Onedark', 'Nord', 'Dark', 'White'
   weatherUnit: "C", // 'F', 'C'
   language: "en", // More languages in https://openweathermap.org/current#multi
 
@@ -67,7 +68,7 @@ const CONFIG = {
   changeThemeByOS: false,
 
   // Switch theme based on set hours. (24hr format, string must be in: hh:mm)
-  changeThemeByHour: false,
+  changeThemeByHour: true,
   hourDarkThemeActive: "18:30",
   hourDarkThemeInactive: "07:00",
 
