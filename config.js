@@ -42,7 +42,7 @@ const CONFIG = {
   searchEngine: "google", // google, ddg
   barStyle: "bento", // bento, minimal, boxy, rounded
   barPlaceholder: "", // if blank, use search engine name. Set to ' ' for no placeholder.
-  autoFocusBar: true,
+  autoFocusBar: false,
 
   // Greetings
   greetingMorning: "Good morning,",
@@ -90,7 +90,7 @@ const CONFIG = {
       id: "2",
       name: "Mail",
       icon: "envelope",
-      link: "https://outlook.live.com/mail"
+      link: "https://mail.google.com/mail/u/1/#inbox"
     },
     {
       id: "3",
@@ -106,9 +106,9 @@ const CONFIG = {
     },
     {
       id: "5",
-      name: "BitBurner",
+      name: "freeCodeCamp",
       icon: "terminal",
-      link: "https://danielyxie.github.io/bitburner/"
+      link: "https://www.freecodecamp.org/learn"
     },
     {
       id: "6",
@@ -120,37 +120,37 @@ const CONFIG = {
 
   secondButtonsContainer: [
     {
-      id: "1",
+      id: "11",
       name: "Music",
       icon: "fab-spotify",
       link: "https://open.spotify.com"
     },
     {
-      id: "2",
+      id: "12",
       name: "twitter",
       icon: "fab-twitter",
       link: "https://nitter.net/"
     },
     {
-      id: "3",
+      id: "13",
       name: "bot",
       icon: "fab-discord",
       link: "https://discord.com/app"
     },
     {
-      id: "4",
+      id: "14",
       name: "MechGroupBuys",
       icon: "keyboard",
       link: "https://www.mechgroupbuys.com"
     },
     {
-      id: "5",
+      id: "15",
       name: "Youtube",
       icon: "fab-youtube",
       link: "https://youtube.com/"
     },
     {
-      id: "6",
+      id: "16",
       name: "Dropout TV",
       icon: "face-laugh",
       link: "https://www.dropout.tv/"
@@ -163,6 +163,54 @@ const CONFIG = {
 
   // First Links Container
   firstlistsContainer: [
+    {
+      icon: "house-user",
+      id: "1",
+      links: [
+        {
+          name: "Spotify",
+          link: "https://www.spotify.com"
+        },
+        {
+          name: "Exercism",
+          link: "https://exercism.org"
+        },
+        {
+          name: "Itch.io",
+          link: "https://itch.io/"
+        },
+        {
+          name: "Dropout",
+          link: "https://www.dropout.tv"
+        },
+      ]
+    },
+    {
+      icon: "fab-github",
+      id: "2",
+      links: [
+        {
+          name: "Frameworks",
+          link: "https://www.framework.dev/"
+        },
+        {
+          name: "Neocities",
+          link: "https://neocities.org/"
+        },
+        {
+          name: "Rust Book",
+          link: "https://rust-book.cs.brown.edu/"
+        },
+        {
+          name: "Roundup",
+          link: "https://www.obsidianroundup.org/"
+        }
+      ]
+    }
+  ],
+
+  // Second Links Container
+  secondListsContainer: [
     {
       icon: "music",
       id: "1",
@@ -209,64 +257,16 @@ const CONFIG = {
     }
   ],
 
-  // Second Links Container
-  secondListsContainer: [
-    {
-      icon: "house-user",
-      id: "1",
-      links: [
-        {
-          name: "Spotify",
-          link: "https://www.spotify.com"
-        },
-        {
-          name: "Reddit",
-          link: "https://libreddit.spike.codes"
-        },
-        {
-          name: "BitBurner",
-          link: "https://danielyxie.github.io/bitburner"
-        },
-        {
-          name: "Itch.io",
-          link: "https://itch.io/"
-        }
-      ]
-    },
-    {
-      icon: "fab-github",
-      id: "2",
-      links: [
-        {
-          name: "Frameworks",
-          link: "https://www.framework.dev/"
-        },
-        {
-          name: "Neocities",
-          link: "https://neocities.org/"
-        },
-        {
-          name: "Rust",
-          link: "https://arewegameyet.rs/"
-        },
-        {
-          name: "Roundup",
-          link: "https://www.obsidianroundup.org/"
-        }
-      ]
-    }
-  ],
-
   // Set any of the below options to false to disable drawing the component on the page.
   // If themeButton is set to false, the theme can only be set in this file.
   // Disabling the weather component may cause issues with location-based light/dark switching.
   componentsEnabled: {
     searchBar: false,
-    themeButton: false,
+    themeButton: true,
     clock: true,
     greeter: true,
     date: true,
-    weather: true
+    weather: false
   }
 
 };

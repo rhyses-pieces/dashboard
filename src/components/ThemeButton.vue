@@ -22,7 +22,7 @@ const isOpen = () => {
 </script>
 
 <template>
-  <div class="flex flex-col absolute mx-1 right-2 top-20 lg:top-4">
+  <div class="flex flex-col fixed mx-1 right-8 top-20 lg:top-4">
     <button
       id="themeButton"
       @click="toggleTheme()"
